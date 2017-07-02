@@ -12,6 +12,7 @@ import GeneralEntries from '../routes/GeneralEntries';
 import Search from '../routes/Search';
 import Topic from '../routes/Topic';
 import Author from '../routes/Author';
+import NotFound from '../routes/NotFound';
 
 import './App.css';
 
@@ -27,6 +28,7 @@ const App = () => (
         <Route exact path="/arama" component={Search} />
         <Route exact path="/baslik" component={Topic} />
         <Route exact path="/yazar" component={Author} />
+        <Route component={NotFound} />
       </Switch>
     </Content>
     <Footer />

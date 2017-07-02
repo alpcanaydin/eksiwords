@@ -6,10 +6,8 @@ import PropTypes from 'prop-types';
 import { isFetched, isLoading, isFailed } from '../util/stateHelpers';
 import { request } from '../redux/modules/general';
 
-import wordSizeTransformer from '../util/wordSizeTransformer';
-
-import Cloud from '../components/shared/Cloud';
 import LinkButton from '../components/ui/LinkButton';
+import List from '../components/shared/List';
 import Loading from '../components/shared/Loading';
 import Failed from '../components/shared/Failed';
 
@@ -31,22 +29,11 @@ class GeneralEntries extends Component {
       return <Failed />;
     }
 
-    const width =
-      window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-
-    const height =
-      window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-
     return (
       <div className="General">
         <h1>entry'lerde en çok kullanılan kelimeler</h1>
 
-        <Cloud
-          width={width - 150}
-          height={height - 200}
-          fontFamily="Source Sans Pro"
-          data={wordSizeTransformer(general.data.mostUsedEntryWords)}
-        />
+        <List data={general.data.mostUsedEntryWords} />
 
         <div className="u-gap-top">
           <LinkButton to="/genel" secondary>

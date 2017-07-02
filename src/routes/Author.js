@@ -8,9 +8,7 @@ import PropTypes from 'prop-types';
 import { emptyStateItem, isFetched, isLoading, isFailed } from '../util/stateHelpers';
 import { request } from '../redux/modules/author';
 
-import wordSizeTransformer from '../util/wordSizeTransformer';
-
-import Cloud from '../components/shared/Cloud';
+import List from '../components/shared/List';
 import LinkButton from '../components/ui/LinkButton';
 import Loading from '../components/shared/Loading';
 import Failed from '../components/shared/Failed';
@@ -51,22 +49,11 @@ class Author extends Component {
       );
     }
 
-    const width =
-      window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-
-    const height =
-      window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-
     return (
       <div className="Author">
         <h1>@{author.data.author} ({author.data.totalUsedEntryWords} kelime)</h1>
 
-        <Cloud
-          width={width - 150}
-          height={height - 200}
-          fontFamily="Source Sans Pro"
-          data={wordSizeTransformer(author.data.mostUsedEntryWords)}
-        />
+        <List data={author.data.mostUsedEntryWords} />
 
         <div className="u-gap-top">
           <LinkButton to="/arama" secondary>
