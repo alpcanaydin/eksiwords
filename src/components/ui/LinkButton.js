@@ -1,23 +1,17 @@
 import React from 'react';
+import classnames from 'classnames';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 import './Button.css';
 
 const LinkButton = ({ primary, secondary, className, children, ...otherProps }) => {
-  const classNames = ['Button'];
+  const classNames = classnames(className, 'Button', {
+    'Button--primary': primary,
+    'Button--secondary': secondary,
+  });
 
-  if (primary) {
-    classNames.push('Button--primary');
-  }
-
-  if (secondary) {
-    classNames.push('Button--secondary');
-  }
-
-  classNames.push(className);
-
-  return <Link className={classNames.join(' ')} {...otherProps}>{children}</Link>;
+  return <Link className={classNames} {...otherProps}>{children}</Link>;
 };
 
 LinkButton.defaultProps = {
