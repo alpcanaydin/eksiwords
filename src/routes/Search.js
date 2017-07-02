@@ -24,7 +24,7 @@ const Search = () => (
         {' '}
         <Link to={`/baslik?q=recep tayyip erdoğan`}>recep tayyip erdoğan</Link>,
         {' '}
-        <Link to={`/yazar?q=ssg`}>@ssg</Link>
+        <Link to={`/yazar?q=ssg`}>@ssg</Link>,
         {' '}
         <Link to={`/yazar?q=kanzuk`}>@kanzuk</Link>
       </p>
