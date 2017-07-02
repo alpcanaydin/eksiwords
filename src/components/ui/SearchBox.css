@@ -1,0 +1,29 @@
+.SearchBox {
+  background: #fff;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.3);
+}
+
+.SearchBox__input {
+  width: 100%;
+  border: none;
+  padding: 20px;
+}
+
+.SearchBox__input:focus {
+  outline: none;
+}
+
+.SearchBox__button {
+  border: none;
+  background-color: #fff;
+  background-image: url(../../img/search.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 20px;
+  height: 20px;
+  margin-top: 20px;
+}
+
+.SearchBox__button:hover {
+  cursor: pointer;
+}

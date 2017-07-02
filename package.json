@@ -1,0 +1,63 @@
+{
+  "name": "eksiwords",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "apisauce": "^0.14.0",
+    "bootstrap": "4.0.0-alpha.6",
+    "d3-cloud": "^1.2.4",
+    "d3-scale": "^1.0.6",
+    "d3-selection": "^1.1.0",
+    "history": "^4.6.1",
+    "normalize.css": "^7.0.0",
+    "prop-types": "^15.5.10",
+    "query-string": "^4.3.4",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-redux": "^5.0.5",
+    "react-router": "^4.1.1",
+    "react-router-dom": "^4.1.1",
+    "react-router-redux": "next",
+    "react-slick": "^0.14.11",
+    "redux": "^3.6.0",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "enzyme": "^2.8.2",
+    "enzyme-to-json": "^1.5.1",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-config-prettier": "^2.1.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-prettier": "^2.0.1",
+    "eslint-plugin-react": "^6.10.3",
+    "lint-staged": "^3.4.0",
+    "pre-commit": "^1.2.2",
+    "prettier": "^1.2.2",
+    "react-scripts": "0.9.5",
+    "react-test-renderer": "^15.5.4",
+    "stylelint": "^7.10.1",
+    "stylelint-config-standard": "^16.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "lint:eslint": "eslint .",
+    "lint:stylelint": "stylelint .",
+    "lint": "yarn run lint:eslint && yarn run lint:stylelint",
+    "format": "prettier --print-width=100 --single-quote --trailing-comma all --write \"{src,__tests__}/**/*.js\"",
+    "lint-staged": "lint-staged",
+    "test": "react-scripts test --env=jsdom",
+    "test:ci": "yarn run lint",
+    "eject": "react-scripts eject"
+  },
+  "lint-staged": {
+    "*.js": [
+      "yarn run format",
+      "git add"
+    ]
+  },
+  "pre-commit": "lint-staged"
+}
