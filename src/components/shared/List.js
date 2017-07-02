@@ -11,7 +11,7 @@ const List = ({ data }) => (
         {' '}
         {item.word}
         {' '}
-        <span className="u-text-primary">({item.count} defa)</span>
+        <span className="u-text-primary">({item.count.toLocaleString()} defa)</span>
       </li>
     ))}
   </ul>
