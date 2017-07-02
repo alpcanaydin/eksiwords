@@ -6,7 +6,7 @@ import './List.css';
 const List = ({ data }) => (
   <ul className="List">
     {data.map((item, index) => (
-      <li className="List__item">
+      <li className="List__item" key={item.word}>
         <strong>{index + 1}.</strong>
         {' '}
         {item.word}

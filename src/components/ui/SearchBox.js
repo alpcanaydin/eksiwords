@@ -12,7 +12,9 @@ class SearchBox extends Component {
     this.handleSearch = this.handleSearch.bind(this);
   }
 
-  handleSearch() {
+  handleSearch(event) {
+    event.preventDefault();
+
     const value = this.search.value;
 
     if (value.startsWith('@')) {

@@ -75,6 +75,10 @@ p {
   margin: 0 0 12px;
 }
 
+input:required {
+  box-shadow: none;
+}
+
 .u-text-center {
   text-align: center !important;
 }

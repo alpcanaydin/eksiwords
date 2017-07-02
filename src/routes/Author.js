@@ -15,7 +15,6 @@ import Failed from '../components/shared/Failed';
 
 class Author extends Component {
   componentWillMount() {
-    console.log(this.props);
     if (!this.props.q) {
       this.props.push('/arama');
       return;

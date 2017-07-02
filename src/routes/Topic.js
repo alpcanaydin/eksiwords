@@ -15,7 +15,6 @@ import Failed from '../components/shared/Failed';
 
 class Topic extends Component {
   componentWillMount() {
-    console.log(this.props);
     if (!this.props.q) {
       this.props.push('/arama');
       return;

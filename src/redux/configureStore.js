@@ -16,7 +16,8 @@ const configureStore = (prelodedState, history) => {
   const composed = [applyMiddleware(...middlewares)];
 
   /* istanbul ignore if */
-  if (process.env.NODE_ENV === 'development') {
+  // eslint-disable-next-line
+  if (process.env.NODE_ENV === 'development' && window.__REDUX_DEVTOOLS_EXTENSION__) {
     /* eslint-disable */
     composed.push(window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
     /* eslint-enable */
