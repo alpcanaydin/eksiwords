@@ -50,7 +50,7 @@ class Author extends Component {
 
     return (
       <div className="Author">
-        <h1>@{author.data.author} ({author.data.totalUsedEntryWords} kelime)</h1>
+        <h1>@{author.data.author} ({author.data.totalUsedEntryWords.toLocaleString()} kelime)</h1>
 
         <List data={author.data.mostUsedEntryWords} />
 

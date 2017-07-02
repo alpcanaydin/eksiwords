@@ -50,7 +50,7 @@ class Topic extends Component {
 
     return (
       <div className="Topic">
-        <h1>{topic.data.topic} ({topic.data.totalUsedEntryWords} kelime)</h1>
+        <h1>{topic.data.topic} ({topic.data.totalUsedEntryWords.toLocaleString()} kelime)</h1>
 
         <List data={topic.data.mostUsedEntryWords} />
 
