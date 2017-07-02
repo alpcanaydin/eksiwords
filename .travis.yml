@@ -16,8 +16,8 @@ script:
 after_success:
   - codecov
 
-environment:
-  - "REACT_APP_API_URL=https://eksiwords.alpcanaydin.com"
+env:
+  - REACT_APP_API_URL=https://eksiwords.alpcanaydin.com
 
 before_deploy:
   - yarn run build
