@@ -114,3 +114,9 @@ p {
 .u-text-primary {
   color: #53a245 !important;
 }
+
+@media (max-width: 768px) {
+  .u-hidden-mobile {
+    display: none;
+  }
+}

@@ -10,6 +10,8 @@ import LinkButton from '../components/ui/LinkButton';
 import Loading from '../components/shared/Loading';
 import Failed from '../components/shared/Failed';
 
+import './General.css';
+
 class General extends Component {
   componentWillMount() {
     if (!isFetched(this.props.general)) {

@@ -38,7 +38,7 @@ class SearchBox extends Component {
               }}
             />
           </div>
-          <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2 u-text-center">
+          <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2 u-text-center u-hidden-mobile">
             <button className="SearchBox__button" />
           </div>
         </div>

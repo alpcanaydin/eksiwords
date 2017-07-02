@@ -22,3 +22,9 @@
 .Footer-menu__item:hover {
   color: #666;
 }
+
+@media (max-width: 768px) {
+  .Footer-menu {
+    text-align: center;
+  }
+}

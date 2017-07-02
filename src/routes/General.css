@@ -1,0 +1,7 @@
+@media (max-width: 768px) {
+  .General a {
+    display: block;
+    width: 100%;
+    margin-bottom: 12px;
+  }
+}
