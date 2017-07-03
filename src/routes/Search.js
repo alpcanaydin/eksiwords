@@ -21,7 +21,7 @@ const Search = () => (
         <Link to={`/baslik?q=galatasaray`}>galatasaray</Link>,
         {' '}
         <Link to={`/baslik?q=beşiktaş`}>beşiktaş</Link>,
-        {' '},
+        {' '}
         <Link to={`/baslik?q=kemal kılıçdaroğlu`}>kemal kılıçdaroğlu</Link>,
         {' '}
         <Link to={`/baslik?q=recep tayyip erdoğan`}>recep tayyip erdoğan</Link>,
